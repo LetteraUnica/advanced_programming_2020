@@ -4,6 +4,14 @@
 // template <typename T>
 // double* allocate_array(const T n);
 
+template <typename T>
+void print_array(T* a, std::size_t n) {
+    for(std::size_t i = 0; i < n; i++) {
+        std::cout << a[i] << " ";
+    }
+    std::cout << std::endl;
+}
+
 // Function definition
 template <typename T>
 double* allocate_array(const T n) {

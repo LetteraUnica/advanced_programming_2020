@@ -36,11 +36,14 @@ int main() {
   for (auto& x : a)
     x *= 10;
 
-  for (auto i = 0u; i < a.size(); ++i)
+  auto i = 0u;
+  for (i = 0u; i < a.size(); ++i)
     std::cout << "a[" << i << "] = " << a[i] << std::endl;
 
-  b.at(90);  // bound checking at run-time
-
+  // b.at(90);  // bound checking at run-time
+  std::cout << i << std::endl;
+  std::cout << i++ << std::endl;
+  std::cout << i << std::endl;
   return 0;
 }
 

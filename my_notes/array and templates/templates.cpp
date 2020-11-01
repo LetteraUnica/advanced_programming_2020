@@ -1,8 +1,8 @@
 #include <iostream>
 #include <typeinfo>
 
+// Function declaration
 template <typename T, typename U>
-
 T sum(const T a, const U b);
 
 int main(){
@@ -16,6 +16,7 @@ int main(){
     return 0;
 }
 
+// Function definition
 template <typename T, typename U>
 T sum(const T a, const U b) {
     return a + b;
